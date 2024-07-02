@@ -1,0 +1,179 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+  background-color: rgb(200, 193, 193);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: flex-start;
+}
+
+.tile-image {
+  width: 300px;
+  height: 200px;
+  float: left;
+}
+
+h1 {
+  grid-column: span 2;
+  font-size: 5.2rem;
+  margin-top: 3%;
+}
+
+span {
+  color: rgb(24, 24, 91);
+}
+
+.left {
+  float: left;
+  overflow: auto;
+}
+
+.right {
+  float: right;
+  overflow: auto;
+}
+
+footer {
+  color: rgb(1, 1, 94);
+  clear: both;
+  background-color: rgb(170, 122, 129);
+  text-align: center !important;
+  height: 60px;
+  margin-top: 3%;
+}
+
+h2,
+p {
+  margin-left: 50%;
+  margin-right: 10%;
+}
+
+/*-----------mobile-phones------------*/
+@media (min-width: 319px) and (max-width: 480px) {
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 10px 10px 0 10px;
+    background-color: #faf9f6;
+    display: block;
+    min-height: 95vh;
+    background-color: rgb(200, 193, 193);
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: flex-start;
+  }
+
+  .tile-image {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    grid-column: span 1;
+    font-size: 2.2rem;
+    margin-top: 2%;
+  }
+
+  span {
+    color: rgb(24, 24, 91);
+  }
+
+  footer {
+    color: rgb(1, 1, 94);
+    background-color: rgb(170, 122, 129);
+    text-align: center !important;
+    height: 40px;
+    margin-top: 5%;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 10%;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  ul {
+    text-align: center;
+  }
+}
+
+/*-----------ipads and tablets------------*/
+@media (min-width: 481px) and (max-width: 1200px) {
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 15px 15px 0 15px;
+    background-color: #faf9f6;
+    display: block;
+    min-height: 95vh;
+    background-color: rgb(200, 193, 193);
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: flex-start;
+  }
+
+  .tile-image {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    grid-column: span 1;
+    font-size: 4.2rem;
+    margin-top: 2%;
+  }
+
+  span {
+    color: rgb(24, 24, 91);
+  }
+
+  footer {
+    color: rgb(1, 1, 94);
+    background-color: rgb(170, 122, 129);
+    text-align: center !important;
+    height: 40px;
+    margin-top: 5%;
+  }
+
+  h2,
+  p {
+    margin: 2% 0;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+/*---------------Laptops---------------*/
+@media (min-width: 1201px) and (max-width: 1600px) {
+  body {
+  }
+}
+
+/*--------------Desktops---------------*/
+@media (min-width: 1601px) {
+  body {
+  }
+}
